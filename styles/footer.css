@@ -10,6 +10,7 @@ footer {
 }
 
 .information {
+  position: relative;
   width: 1180px;
   height: 65px;
   display: flex;
@@ -19,14 +20,26 @@ footer {
   border-bottom: 1px #b5aba2 solid;
 }
 
-.copyright-developer {
+.copyright {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+.copyright--item a {
+  text-decoration: none;
+  color: #ece2d0;
+}
+
+.copyright--item a:hover {
+  text-decoration: underline;
+}
+
 footer .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 300px;
   height: 40px;
   display: flex;
