@@ -248,7 +248,6 @@
 
 .advanteges-card-name {
   align-self: center;
-
   font-weight: 600;
   font-size: 32px;
   line-height: 30px;
@@ -256,6 +255,12 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-
   color: #130918;
+}
+
+.partners {
+  padding: 70px 0;
+  height: 700px;
+  background-color: #ece2d0;
+  text-align: center;
 }
