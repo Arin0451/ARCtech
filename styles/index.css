@@ -209,10 +209,53 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 30px;
-
   display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  color: #130918;
+}
+
+.advanteges {
+  padding: 70px 0;
+  height: 600px;
+  background-color: #ece2d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advanteges-grid {
+  width: 1180px;
+  height: 405;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 65px;
+}
+
+.advanteges-card {
+  width: 350px;
+  height: 405px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shipping-adv-card {
+  align-items: normal;
+}
+
+.advanteges-card-name {
+  align-self: center;
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
   color: #130918;
 }
