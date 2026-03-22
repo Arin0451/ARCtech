@@ -10,6 +10,7 @@
 }
 
 .hero-title {
+  text-transform: uppercase;
   position: absolute;
   z-index: 1;
   color: #ffffff;
@@ -83,12 +84,32 @@
 .news-card:hover {
   outline: 3px solid #f1aa1c;
   outline-offset: 3px;
+  cursor: pointer;
 }
+
 .news-card-img {
+  position: relative;
   background-color: #130918;
   height: 200px;
   border-radius: 15px 15px 0 0;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.news-card-img img {
+  width: 80%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.news-card-img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 105%;
+  object-fit: cover;
+  pointer-events: none;
 }
 
 .news-card-title {
@@ -101,12 +122,97 @@
   margin: auto 16px 16px 16px;
 }
 
-.product-catalog {
+.catalog {
   height: 1540px;
   padding: 70px 0;
-  background-color: #040404;
+  background:
+    radial-gradient(
+      ellipse 40% 60% at 35% 20%,
+      rgba(209, 206, 206, 0.13),
+      rgba(22, 25, 37, 0.1) 80%,
+      transparent 85%
+    ),
+    radial-gradient(
+      ellipse 55% 50% at 45% 75%,
+      rgba(184, 184, 184, 0.123),
+      rgba(39, 43, 59, 0.12) 55%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse 40% 45% at 78% 30%,
+      rgba(255, 255, 255, 0.09),
+      rgba(39, 43, 59, 0.07) 40%,
+      transparent 75%
+    ),
+    url("../src/images/lines.png") no-repeat left bottom,
+    #040404;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.product-catalog-title {
+.catalog-title {
   color: #ffffff;
+}
+
+.catalog-grid {
+  width: 1180px;
+  height: 1300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-content: start;
+}
+
+.catalog-card {
+  height: 420px;
+  background: rgba(9, 13, 25, 0.3);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-card:hover {
+  border: 4px #ece2d0 solid;
+  cursor: pointer;
+}
+
+.catalog-card-info {
+  width: 510px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ece2d0;
+  padding: 20px 35px;
+  border-radius: 22px;
+}
+
+.catalog-card-info-img {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-card-info img {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.catalog-card-info-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #130918;
 }
