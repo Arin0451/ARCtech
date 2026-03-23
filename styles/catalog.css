@@ -32,6 +32,10 @@ main {
   flex-direction: column;
 }
 
+.product-card-mouse {
+  height: 550px;
+}
+
 .product-card-img {
   width: 510px;
   height: 190px;
@@ -42,6 +46,11 @@ main {
   margin-bottom: 25px;
   display: flex;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.product-card-mouse > .product-card-img {
+  height: 320px;
 }
 
 .product-card-img img {
@@ -55,7 +64,7 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  height: 100%;
+  flex: 1;
 }
 
 .product-card-info {
