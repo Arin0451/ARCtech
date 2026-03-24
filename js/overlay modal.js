@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.remove("active");
   });
 
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.remove("active");
+    document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("details-btn")) {
+        document.getElementById("product-modal").classList.add("active");
     }
-  });
+    });
 });
