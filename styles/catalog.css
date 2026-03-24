@@ -168,3 +168,139 @@ main {
 .buy-btn:hover::before {
   opacity: 1;
 }
+
+/* окно */
+.modal-content {
+  width: 1180px;
+  height: 810px;
+  background: rgba(12, 16, 26, 0.95);
+  border-radius: 20px;
+  padding: 45px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* крестик */
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/* картинка */
+.modal-image {
+  width: 100%;
+  height: 400px;
+  background: #ece2d0;
+  border-radius: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* нижняя часть */
+.modal-body {
+  display: flex;
+  gap: 30px;
+}
+
+/* характеристики */
+.modal-specs {
+  display: flex;
+  gap: 20px;
+}
+
+.specs-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* твой стиль */
+.product-card-info-item {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  height: 35px;
+  background: #0c101a;
+  border-radius: 30px;
+  padding: 10px 25px 10px 15px;
+  color: white;
+}
+
+/* правая колонка */
+.modal-side {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* описание */
+.modal-description {
+  height: 130px;
+  background: #0c101a;
+  border-radius: 30px;
+  padding: 20px;
+  color: white;
+}
+
+/* цена */
+.modal-price {
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+}
+
+/* кнопка */
+.modal-buy {
+  width: 100%;
+  height: 35px;
+  background: #ffbc13;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal-buy {
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-buy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  padding: 2px;
+
+  background: linear-gradient(90deg, #ffffff, #2dc5f4, #ae02f6, #08000c);
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.modal-buy:hover::before {
+  opacity: 1;
+}
