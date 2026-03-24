@@ -1,0 +1,226 @@
+main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("../src/images/background.png");
+  background-repeat: no-repeat;
+  background-size: 4600px;
+  background-position: calc(50% + 190px) -50px;
+}
+
+.cart {
+  width: 1180px;
+  margin: 130px auto;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.title {
+  grid-column: 1 / -1;
+  font-weight: 700;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 70px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.cart-list {
+  grid-column: 1/8;
+  height: 390px;
+  background: #ece2d0;
+  box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.cart-list {
+  width: 715px;
+  height: 550px;
+  background: #ece2d0;
+  box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* карточка товара */
+.cart-item {
+  width: 100%;
+  height: 105px;
+  background: #0c101a;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 20px;
+}
+
+/* блок под картинку */
+.cart-item-img {
+  width: 120px;
+  height: 75px;
+  background: #ece2d0;
+  border-radius: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-item-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* правая часть */
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 75px;
+  flex: 1;
+}
+
+/* название */
+.cart-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* цена */
+.cart-item-price {
+  font-weight: 500;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+/* крестик */
+.cart-item-remove {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.cart-item-remove:hover {
+  color: #ffbc13;
+}
+
+.pay-zone {
+  grid-column: 8/13;
+  height: 390px;
+  background: #ece2d0;
+  border-radius: 20px;
+}
+
+.order-form {
+  grid-column: 9/13;
+  height: 390px;
+  background: #ece2d0;
+  border-radius: 20px;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-form label {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.order-form input {
+  height: 35px;
+  background: #0c101a;
+  border-radius: 30px;
+  border: none;
+  padding: 0 15px;
+  color: white;
+}
+
+.card-row {
+  display: flex;
+  gap: 10px;
+}
+
+.card-row div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-row input {
+  width: 100px;
+}
+
+.total {
+  margin-top: 10px;
+  padding: 10px 15px;
+
+  background: #0c101a;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: white;
+  font-weight: 500;
+}
+
+.order-form button {
+  position: relative;
+
+  margin-top: auto;
+  width: 100%;
+  height: 30px;
+
+  background: #ffbc13;
+  border-radius: 30px;
+  border: none;
+
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.order-form button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  padding: 2px;
+
+  background: linear-gradient(90deg, #ffffff, #2dc5f4, #ae02f6, #08000c);
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.order-form button:hover::before {
+  opacity: 1;
+}

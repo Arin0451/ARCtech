@@ -103,13 +103,42 @@ main {
 }
 
 .send-btn {
-  grid-column: span 2;
-  width: 300px;
+  position: relative;
+  width: 400px;
   height: 45px;
+  border-radius: 30px;
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   background: #ffbc13;
-  border: none;
-  border-radius: 30px;
-  font-weight: 600;
+  font-weight: 500;
+  color: black;
   cursor: pointer;
+  overflow: hidden;
+  border: none;
+}
+
+.send-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  padding: 2px;
+
+  background: linear-gradient(90deg, #ffffff, #2dc5f4, #ae02f6, #08000c);
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.send-btn:hover::before {
+  opacity: 1;
 }
