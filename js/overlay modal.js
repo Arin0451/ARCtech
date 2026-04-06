@@ -1,26 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("click", (e) => {
   const modal = document.getElementById("product-modal");
-  const openBtns = document.querySelectorAll(".details-btn");
-  const closeBtn = document.querySelector(".modal-close");
 
-  if (!modal || !closeBtn) {
-    console.log("modal not found");
-    return;
+  if (!modal) return;
+
+  // открыть
+  if (e.target.classList.contains("details-btn")) {
+    modal.classList.add("active");
   }
 
-  openBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-      modal.classList.add("active");
-    });
-  });
-
-  closeBtn.addEventListener("click", () => {
+  // закрыть по крестику
+  if (e.target.classList.contains("modal-close")) {
     modal.classList.remove("active");
-  });
+  }
 
-    document.addEventListener("click", (e) => {
-    if (e.target.classList.contains("details-btn")) {
-        document.getElementById("product-modal").classList.add("active");
-    }
-    });
+  // закрыть по фону
+  if (e.target.classList.contains("modal")) {
+    modal.classList.remove("active");
+  }
 });

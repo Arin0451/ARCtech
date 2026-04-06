@@ -264,3 +264,8 @@
   background-color: #ece2d0;
   text-align: center;
 }
+
+.news-card,
+.catalog-card {
+  transition: all 0.07s ease;
+}
