@@ -6,5 +6,5 @@ async function loadComponent(id, file) {
     
 }
 
-loadComponent("header", "components/header.html");
-loadComponent("footer", "components/footer.html");
+loadComponent("header", "/arctech/components/header.html");
+loadComponent("footer", "/arctech/components/footer.html");
