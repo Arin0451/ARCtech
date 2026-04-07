@@ -24,7 +24,7 @@ main {
 .find-us {
   display: flex;
   gap: 30px;
-  background: #ece2d0;
+  background: rgba(9, 13, 25, 0.3);
   padding: 30px;
   border-radius: 20px;
 }
@@ -48,6 +48,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  font-weight: 500;
 }
 
 .contact-item {
@@ -59,7 +60,7 @@ main {
 }
 
 .feedback {
-  background: #ece2d0;
+  background: rgba(9, 13, 25, 0.3);
   padding: 40px;
   border-radius: 20px;
 }
@@ -74,6 +75,17 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+label {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+input {
+  font-weight: 500;
 }
 
 .left input {
