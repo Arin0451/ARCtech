@@ -55,6 +55,66 @@ header .logo {
   transition: opacity 0.2s;
 }
 
+.catalog-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.catalog-menu span {
+  padding: 10px 15px;
+  display: inline-block;
+  color: #000;
+  font-weight: bold;
+}
+
+.catalog-menu .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -55px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 180px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 5px 5px;
+}
+
+.catalog-menu .dropdown::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #000;
+  border-radius: 5px 5px 0 0;
+}
+
+.catalog-menu .dropdown li a {
+  display: block;
+  padding: 8px 15px 8px 10px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-left: 4px solid transparent;
+  background: #ece2d0;
+  border-bottom: 1px solid #aba198;
+}
+
+.catalog-menu .dropdown li:last-child a {
+  background: #ece2d0;
+  border-radius: 0 0 5px 5px;
+  border-bottom: none;
+}
+
+.catalog-menu .dropdown li a:hover {
+  background: #e0d6c5;
+  border-left: 4px solid #ffbc13;
+}
+
+.catalog-menu:hover .dropdown {
+  display: block;
+}
+
 .navigation--item:hover {
   text-decoration: underline;
 }
