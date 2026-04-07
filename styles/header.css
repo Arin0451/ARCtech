@@ -60,8 +60,24 @@ header .logo {
   cursor: pointer;
 }
 
+.dropdown-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+
+.dropdown-toggle .arrow {
+  transition: transform 0.3s;
+}
+
 .catalog-menu span {
-  padding: 10px 15px;
+  padding: 10px 8px;
   display: inline-block;
   color: #000;
   font-weight: bold;
@@ -90,6 +106,7 @@ header .logo {
 }
 
 .catalog-menu .dropdown li a {
+  font-size: 20px;
   display: block;
   padding: 8px 15px 8px 10px;
   color: #000;
@@ -111,8 +128,12 @@ header .logo {
   border-left: 4px solid #ffbc13;
 }
 
-.catalog-menu:hover .dropdown {
+.catalog-menu.open .dropdown {
   display: block;
+}
+
+.catalog-menu.open .dropdown-toggle .arrow {
+  transform: rotate(-180deg);
 }
 
 .navigation--item:hover {

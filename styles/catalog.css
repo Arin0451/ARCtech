@@ -322,9 +322,6 @@ main {
   opacity: 1;
 }
 
-.details-btn,
-.buy-btn,
-.modal-buy,
-.navigation--item {
-  transition: all 0.07s ease;
+.details-btn {
+  transition: all 0.07s linear(-0.35 -31.42%, 1 100%);
 }
