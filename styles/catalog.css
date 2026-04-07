@@ -326,5 +326,5 @@ main {
 .buy-btn,
 .modal-buy,
 .navigation--item {
-  transition: all 0.12s ease;
+  transition: all 0.07s ease;
 }

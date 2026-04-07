@@ -30,16 +30,9 @@ main {
 
 .cart-list {
   grid-column: 1/8;
-  height: 390px;
-  background: #ece2d0;
-  box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-}
-
-.cart-list {
   width: 715px;
   height: 550px;
-  background: #ece2d0;
+  background: rgba(9, 13, 25, 0.3);
   box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 
@@ -49,7 +42,6 @@ main {
   gap: 15px;
 }
 
-/* карточка товара */
 .cart-item {
   width: 100%;
   height: 105px;
@@ -62,7 +54,6 @@ main {
   gap: 20px;
 }
 
-/* блок под картинку */
 .cart-item-img {
   width: 120px;
   height: 75px;
@@ -80,7 +71,6 @@ main {
   object-fit: contain;
 }
 
-/* правая часть */
 .cart-item-info {
   display: flex;
   flex-direction: column;
@@ -90,7 +80,6 @@ main {
   flex: 1;
 }
 
-/* название */
 .cart-item-name {
   font-weight: 500;
   font-size: 16px;
@@ -98,14 +87,12 @@ main {
   color: #ffffff;
 }
 
-/* цена */
 .cart-item-price {
   font-weight: 500;
   font-size: 32px;
   color: #ffffff;
 }
 
-/* крестик */
 .cart-item-remove {
   font-size: 24px;
   color: white;
@@ -118,23 +105,27 @@ main {
   color: #ffbc13;
 }
 
-.pay-zone {
-  grid-column: 8/13;
-  height: 390px;
-  background: #ece2d0;
-  border-radius: 20px;
-}
-
 .order-form {
   grid-column: 9/13;
   height: 390px;
-  background: #ece2d0;
+  background: rgba(9, 13, 25, 0.3);
   border-radius: 20px;
 
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+label {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+input {
+  font-weight: 500;
 }
 
 .form-group {
@@ -147,6 +138,8 @@ main {
   font-size: 12px;
   text-transform: uppercase;
   margin-left: 10px;
+  color: #ffffff;
+  font-weight: 500;
 }
 
 .order-form input {
@@ -154,6 +147,7 @@ main {
   background: #0c101a;
   border-radius: 30px;
   border: none;
+  font-weight: 500;
   padding: 0 15px;
   color: white;
 }
