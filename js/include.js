@@ -3,7 +3,6 @@ async function loadComponent(id, file) {
     const text = await response.text();
     document.getElementById(id).innerHTML = text;
     
-    // 👇 ВСЁ, ЧТО РАБОТАЕТ С ХЕДЕРОМ, ПИШИ СЮДА
     if (id === "header") {
         const catalogMenus = document.querySelectorAll('.catalog-menu');
         catalogMenus.forEach(menu => {
@@ -12,7 +11,6 @@ async function loadComponent(id, file) {
                 toggle.addEventListener('click', (e) => {
                     e.stopPropagation();
                     menu.classList.toggle('open');
-                    console.log('я нажался');
                 });
             }
         });

@@ -44,6 +44,45 @@
   z-index: 3;
 }
 
+.hero-btn {
+  position: absolute;
+  z-index: 4;
+  bottom: 70px;
+  background-color: #f1aa1c;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 50px;
+  width: 400px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+}
+
+.hero-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  padding: 2px;
+
+  background: linear-gradient(90deg, #ffffff, #2dc5f4, #ae02f6, #08000c);
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hero-btn:hover::before {
+  opacity: 1;
+}
+
 .news {
   height: 870px;
   background-color: #ece2d0;

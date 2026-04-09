@@ -152,9 +152,7 @@ main {
   inset: 0;
   border-radius: 30px;
   padding: 2px;
-
   background: linear-gradient(90deg, #ffffff, #2dc5f4, #ae02f6, #08000c);
-
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -187,6 +185,7 @@ main {
 
 .modal.active {
   display: flex;
+  overflow: hidden;
 }
 
 .modal-content {
