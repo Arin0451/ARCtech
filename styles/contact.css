@@ -59,6 +59,11 @@ main {
   font-size: 14px;
 }
 
+.contact-item a:hover {
+  color: #b4b1b1;
+  transition: opacity 0.2s;
+}
+
 .feedback {
   background: rgba(9, 13, 25, 0.3);
   padding: 40px;
@@ -82,6 +87,7 @@ label {
   font-size: 14px;
   color: #ffffff;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 input {
@@ -130,6 +136,8 @@ input {
   cursor: pointer;
   overflow: hidden;
   border: none;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .send-btn::before {
