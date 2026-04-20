@@ -26,7 +26,6 @@ main {
   font-weight: 600;
 }
 
-/* 🔹 фильтры слева */
 .filters {
   display: flex;
   gap: 25px;
@@ -47,7 +46,6 @@ main {
   text-decoration: underline;
 }
 
-/* 🔹 сортировка справа */
 .sort {
   display: flex;
   align-items: center;
@@ -65,7 +63,6 @@ main {
   transition: transform 0.3s;
 }
 
-/* переворот стрелки */
 .sort.active .sort-icon {
   transform: rotate(180deg);
 }
