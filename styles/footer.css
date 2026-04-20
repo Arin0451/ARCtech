@@ -33,7 +33,9 @@ footer {
 }
 
 .copyright--item a:hover {
-  text-decoration: underline;
+  color: rgba(236, 226, 208, 0.7);
+  cursor: pointer;
+  transition: all 0.1s;
 }
 
 footer .logo {
@@ -64,8 +66,9 @@ footer .logo {
 }
 
 .contact--item:hover {
-  background-color: #ffffff;
+  color: rgba(236, 226, 208, 0.7);
   cursor: pointer;
+  transition: all 0.1s;
 }
 
 .contact--item img {
