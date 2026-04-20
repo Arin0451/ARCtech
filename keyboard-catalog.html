@@ -13,9 +13,22 @@
 <body>
     <div id="header"></div>
     <main>
+        
         <div class="catalog">
+            <div class="catalog-controls">
+                <div class="filters">
+                    <div class="filter-item active">all</div>
+                    <div class="filter-item">keyboard</div>
+                    <div class="filter-item">mouse</div>
+                    <div class="filter-item">headphones</div>
+                </div>
+                <div class="sort">
+                    <span>price</span>
+                    <div class="sort-icon">▲</div>
+                </div>
+            </div>
             <div class="catalog-grid">
-                <div class="product-card">
+                <div class="product-card" data-type="keyboard" data-price="110">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -35,14 +48,14 @@
                         <div class="product-card-action">
                             <div class="details-btn">details</div>
                             <div class="price">
-                                <div class="amount">120</div>
+                                <div class="amount">110</div>
                                 <div class="currency">$</div>
                             </div>
                             <div class="buy-btn">buy</div>
                         </div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-type="keyboard" data-price="70">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -62,14 +75,14 @@
                         <div class="product-card-action">
                             <div class="details-btn">details</div>
                             <div class="price">
-                                <div class="amount">120</div>
+                                <div class="amount">70</div>
                                 <div class="currency">$</div>
                             </div>
                             <div class="buy-btn">buy</div>
                         </div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-type="keyboard" data-price="45">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -89,14 +102,14 @@
                         <div class="product-card-action">
                             <div class="details-btn">details</div>
                             <div class="price">
-                                <div class="amount">120</div>
+                                <div class="amount">45</div>
                                 <div class="currency">$</div>
                             </div>
                             <div class="buy-btn">buy</div>
                         </div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-type="keyboard" data-price="65">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -116,14 +129,14 @@
                         <div class="product-card-action">
                             <div class="details-btn">details</div>
                             <div class="price">
-                                <div class="amount">120</div>
+                                <div class="amount">65</div>
                                 <div class="currency">$</div>
                             </div>
                             <div class="buy-btn">buy</div>
                         </div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-type="keyboard" data-price="100">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -143,14 +156,14 @@
                         <div class="product-card-action">
                             <div class="details-btn">details</div>
                             <div class="price">
-                                <div class="amount">120</div>
+                                <div class="amount">100</div>
                                 <div class="currency">$</div>
                             </div>
                             <div class="buy-btn">buy</div>
                         </div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-type="keyboard" data-price="110">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -170,14 +183,14 @@
                         <div class="product-card-action">
                             <div class="details-btn">details</div>
                             <div class="price">
-                                <div class="amount">120</div>
+                                <div class="amount">110</div>
                                 <div class="currency">$</div>
                             </div>
                             <div class="buy-btn">buy</div>
                         </div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-type="фыв" data-price="70">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -210,6 +223,7 @@
     <div id="footer"></div>
     <script src="./js/include.js"></script>
     <script src="./js/overlay modal.js"></script>
+    <script src="./js/catalog.js"></script>
 </body>
 
 

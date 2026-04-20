@@ -13,6 +13,63 @@ main {
   margin-bottom: 100px;
 }
 
+.catalog-controls {
+  width: 1180px;
+  margin: 0 auto 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+
+/* 🔹 фильтры слева */
+.filters {
+  display: flex;
+  gap: 25px;
+}
+
+.filter-item {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.filter-item:hover {
+  opacity: 1;
+}
+
+.filter-item.active {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* 🔹 сортировка справа */
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sort:hover {
+  opacity: 0.7;
+}
+
+.sort-icon {
+  font-size: 14px;
+  transition: transform 0.3s;
+}
+
+/* переворот стрелки */
+.sort.active .sort-icon {
+  transform: rotate(180deg);
+}
+
 .catalog-grid {
   margin: 0 auto;
   width: 1180px;
