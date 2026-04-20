@@ -28,6 +28,13 @@ header .logo {
   align-items: center;
 }
 
+.fit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 .navigation-menu {
   position: absolute;
   left: 50%;
@@ -53,6 +60,40 @@ header .logo {
   font-weight: 600;
   cursor: pointer;
   transition: opacity 0.2s;
+}
+
+.navigation-personal .navigation--item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s;
+}
+
+.navigation-personal .navigation--item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navigation-personal .navigation--item img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.navigation-personal .navigation--item:hover {
+  background-color: rgba(153, 141, 118, 0.3);
+}
+
+.navigation--item:hover {
+  text-decoration: underline;
 }
 
 .catalog-menu {
@@ -134,21 +175,4 @@ header .logo {
 
 .catalog-menu.open .dropdown-toggle .arrow {
   transform: rotate(-180deg);
-}
-
-.navigation--item:hover {
-  text-decoration: underline;
-}
-
-.navigation--item img {
-  width: 24px;
-  height: 24px;
-  display: block;
-}
-
-.fit-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
 }
