@@ -8,8 +8,32 @@
   justify-content: flex-end;
   position: relative;
 }
+/* Анимация появления (fade in) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Смещение вниз на 30px */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Анимация выезда клавиатуры снизу */
+@keyframes keyboardSlide {
+  from {
+    opacity: 0;
+    transform: translateY(100px); /* Выезжает глубже, чем текст */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .hero-title {
+  animation: fadeInUp 0.5s ease-out forwards;
   text-transform: uppercase;
   position: absolute;
   z-index: 1;
@@ -22,6 +46,10 @@
 }
 
 .keyboard {
+  animation: keyboardSlide 0.5s ease-out forwards;
+  /* Добавляем небольшую задержку, чтобы она шла чуть после текста */
+  animation-delay: 0.2s;
+  opacity: 0; /* Чтобы не было мигания до начала анимации */
   width: 1180px;
   height: 390px;
   margin-bottom: 110px;
@@ -45,6 +73,9 @@
 }
 
 .hero-btn {
+  animation: fadeInUp 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
   position: absolute;
   z-index: 4;
   bottom: 70px;
@@ -307,4 +338,58 @@
 
 .news-card {
   transition: all 0.07s linear;
+}
+
+.brand-divider {
+  height: 500px;
+  background-color: #040404;
+  background-image: url("../src/images/background.png");
+  background-attachment: scroll;
+  background-position: center -600px;
+  background-size: 160%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.brand-divider::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.divider-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 1180px;
+}
+
+.divider-subtitle {
+  color: #ece2d0;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  opacity: 0.7;
+}
+
+.divider-main-text {
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: -1px;
+}
+
+.divider-line {
+  width: 450px;
+  height: 2px;
+  background-color: #f1aa1c;
+  margin: 0 auto;
 }
