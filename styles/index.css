@@ -8,11 +8,10 @@
   justify-content: flex-end;
   position: relative;
 }
-/* Анимация появления (fade in) */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px); /* Смещение вниз на 30px */
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -20,11 +19,10 @@
   }
 }
 
-/* Анимация выезда клавиатуры снизу */
 @keyframes keyboardSlide {
   from {
     opacity: 0;
-    transform: translateY(100px); /* Выезжает глубже, чем текст */
+    transform: translateY(100px);
   }
   to {
     opacity: 1;
@@ -47,9 +45,8 @@
 
 .keyboard {
   animation: keyboardSlide 0.5s ease-out forwards;
-  /* Добавляем небольшую задержку, чтобы она шла чуть после текста */
   animation-delay: 0.2s;
-  opacity: 0; /* Чтобы не было мигания до начала анимации */
+  opacity: 0;
   width: 1180px;
   height: 390px;
   margin-bottom: 110px;
