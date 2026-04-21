@@ -1,19 +1,30 @@
 const sortBtn = document.querySelector(".sort");
-let ascending = true;
+const grid = document.querySelector(".catalog-grid");
+
+let asc = true;
 
 sortBtn.addEventListener("click", () => {
-  ascending = !ascending;
-  sortBtn.classList.toggle("active");
 
   const cards = Array.from(document.querySelectorAll(".product-card"));
-  const grid = document.querySelector(".catalog-grid");
 
   cards.sort((a, b) => {
-    const priceA = parseInt(a.querySelector(".amount").textContent);
-    const priceB = parseInt(b.querySelector(".amount").textContent);
+    const stockA = a.dataset.stock === "in" ? 1 : 0;
+    const stockB = b.dataset.stock === "in" ? 1 : 0;
 
-    return ascending ? priceA - priceB : priceB - priceA;
+    // сначала наличие
+    if (stockA !== stockB) {
+      return stockB - stockA;
+    }
+
+    // потом цена
+    const priceA = +a.dataset.price;
+    const priceB = +b.dataset.price;
+
+    return asc ? priceA - priceB : priceB - priceA;
   });
+
+  asc = !asc;
+  sortBtn.classList.toggle("active");
 
   cards.forEach(card => grid.appendChild(card));
 });
@@ -26,16 +37,23 @@ filters.forEach(filter => {
     filters.forEach(f => f.classList.remove("active"));
     filter.classList.add("active");
 
-    const type = filter.textContent.trim().toLowerCase();
+    const type = filter.textContent.toLowerCase();
 
     document.querySelectorAll(".product-card").forEach(card => {
-      const cardType = card.dataset.type; // берем data-type
 
-      if (type === "all" || cardType === type) {
+      const cardType = card.dataset.type;
+      const stock = card.dataset.stock;
+
+      if (type === "all") {
         card.style.display = "flex";
-      } else {
-        card.style.display = "none";
+      } 
+      else if (type === "in stock") {
+        card.style.display = stock === "in" ? "flex" : "none";
       }
+      else {
+        card.style.display = cardType === type ? "flex" : "none";
+      }
+
     });
 
   });

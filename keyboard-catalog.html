@@ -12,11 +12,11 @@
 
 <body>
     <div id="header"></div>
-    <main>
-        
+    <main>        
         <div class="catalog">
             <div class="catalog-controls">
                 <div class="filters">
+                    <div class="filter-item">in stock</div>
                     <div class="filter-item active">all</div>
                     <div class="filter-item">keyboard</div>
                     <div class="filter-item">mouse</div>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="catalog-grid">
-                <div class="product-card" data-type="keyboard" data-price="110">
+                <div class="product-card" data-type="keyboard" data-price="110" data-stock="in">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <div class="product-card-action">
-                            <div class="details-btn">details</div>
+                            <div class="stock in">in stock</div>
                             <div class="price">
                                 <div class="amount">110</div>
                                 <div class="currency">$</div>
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card" data-type="keyboard" data-price="70">
+                <div class="product-card" data-type="keyboard" data-price="70" data-stock="in">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         <div class="product-card-action">
-                            <div class="details-btn">details</div>
+                            <div class="stock in">in stock</div>
                             <div class="price">
                                 <div class="amount">70</div>
                                 <div class="currency">$</div>
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card" data-type="keyboard" data-price="45">
+                <div class="product-card" data-type="keyboard" data-price="45" data-stock="in">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                         <div class="product-card-action">
-                            <div class="details-btn">details</div>
+                            <div class="stock in">in stock</div>
                             <div class="price">
                                 <div class="amount">45</div>
                                 <div class="currency">$</div>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card" data-type="keyboard" data-price="65">
+                <div class="product-card" data-type="keyboard" data-price="65" data-stock="in">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -127,7 +127,7 @@
                             </div>
                         </div>
                         <div class="product-card-action">
-                            <div class="details-btn">details</div>
+                            <div class="stock in">in stock</div>
                             <div class="price">
                                 <div class="amount">65</div>
                                 <div class="currency">$</div>
@@ -136,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card" data-type="keyboard" data-price="100">
+                <div class="product-card" data-type="keyboard" data-price="100" data-stock="out">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                         <div class="product-card-action">
-                            <div class="details-btn">details</div>
+                            <div class="stock out">out of stock</div>
                             <div class="price">
                                 <div class="amount">100</div>
                                 <div class="currency">$</div>
@@ -163,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card" data-type="keyboard" data-price="110">
+                <div class="product-card" data-type="keyboard" data-price="110" data-stock="out">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -181,7 +181,7 @@
                             </div>
                         </div>
                         <div class="product-card-action">
-                            <div class="details-btn">details</div>
+                            <div class="stock out">out of stock</div>
                             <div class="price">
                                 <div class="amount">110</div>
                                 <div class="currency">$</div>
@@ -190,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card" data-type="фыв" data-price="70">
+                <div class="product-card" data-type="фыв" data-price="70" data-stock="out">
                     <div class="product-card-img"><img src="./src/images/keyboard.png" alt="keyboard"></div>
                     <div class="product-card-bottom">
                         <div class="product-card-info">
@@ -208,7 +208,7 @@
                             </div>
                         </div>
                         <div class="product-card-action">
-                            <div class="details-btn">details</div>
+                            <div class="stock out">out of stock</div>
                             <div class="price">
                                 <div class="amount">120</div>
                                 <div class="currency">$</div>
@@ -224,14 +224,24 @@
     <script src="./js/include.js"></script>
     <script src="./js/overlay modal.js"></script>
     <script src="./js/catalog.js"></script>
-</body>
 
-
-<div class="modal" id="product-modal">
+    <div class="modal" id="product-modal">
     <div class="modal-content">
         <div class="modal-close">✕</div>
         <div class="modal-image">
-            <img src="./src/images/keyboard.png" alt="">
+            <button class="arrow left">          
+                <svg class="arrow-icon" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.50006 1.5L9.50006 11.5L17.5001 1.5" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <img id="modal-img" src="./src/images/keyboard.png">
+
+            <button class="arrow right">
+                <svg class="arrow-icon" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.50006 1.5L9.50006 11.5L17.5001 1.5" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
         </div>
         <div class="modal-body">
             <div class="modal-specs">
@@ -300,5 +310,9 @@
         </div>
     </div>
 </div>
+</body>
+
+
+
 
 </html>
