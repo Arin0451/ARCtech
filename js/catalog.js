@@ -1,5 +1,7 @@
 const sortBtn = document.querySelector(".sort");
 const grid = document.querySelector(".catalog-grid");
+const params = new URLSearchParams(window.location.search);
+const typeFromUrl = params.get("type");
 
 let asc = true;
 
@@ -58,3 +60,16 @@ filters.forEach(filter => {
 
   });
 });
+
+if (typeFromUrl) {
+  filters.forEach(filter => {
+    const text = filter.textContent.toLowerCase();
+
+    if (
+      text === typeFromUrl ||
+      (typeFromUrl === "in-stock" && text === "in stock")
+    ) {
+      filter.click(); // имитируем клик
+    }
+  });
+}
