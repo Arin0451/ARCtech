@@ -1,1 +1,386 @@
-[ { "id": 1, "name": "K58-B Pro", "type": "keyboard", "price": 110, "stock": "in", "image": "src/images/keyboard.png", "specs": { "brend": "akko", "model": "k58-b pro", "keycap profile": "cherry mx", "form-factor": "70%", "type": "mechanical", "switch": "glow-k", "interface": "USB Type-C", "backlight": "yes", "detachable cable": "yes", "hot-swap": "yes", "cyrillic": "no", "plastic keycaps": "abs" } }, { "id": 2, "name": "K58-B Lite", "type": "keyboard", "price": 70, "stock": "in", "image": "src/images/keyboard.png", "specs": { "brend": "akko", "model": "k58-b lite", "keycap profile": "cherry mx", "form-factor": "70%", "type": "mechanical", "switch": "glow-k", "interface": "USB Type-C", "backlight": "yes", "detachable cable": "yes", "hot-swap": "no", "cyrillic": "no", "plastic keycaps": "abs" } }, { "id": 3, "name": "K58-B Mini", "type": "keyboard", "price": 45, "stock": "in", "image": "src/images/keyboard.png", "specs": { "brend": "akko", "model": "k58-b mini", "keycap profile": "cherry mx", "form-factor": "70%", "type": "mechanical", "switch": "glow-k", "interface": "USB Type-C", "backlight": "no", "detachable cable": "yes", "hot-swap": "no", "cyrillic": "no", "plastic keycaps": "pbt" } }, { "id": 4, "name": "K58-B Max", "type": "keyboard", "price": 65, "stock": "in", "image": "src/images/keyboard.png", "specs": { "brend": "akko", "model": "k58-b max", "keycap profile": "cherry mx", "form-factor": "70%", "type": "mechanical", "switch": "glow-k", "interface": "USB Type-C + Bluetooth", "backlight": "yes", "detachable cable": "yes", "hot-swap": "yes", "cyrillic": "no", "plastic keycaps": "abs" } }, { "id": 5, "name": "K58-B Ultra", "type": "keyboard", "price": 100, "stock": "out", "image": "src/images/keyboard.png", "specs": { "brend": "akko", "model": "k58-b ultra", "keycap profile": "cherry mx", "form-factor": "70%", "type": "mechanical", "switch": "glow-k", "interface": "USB Type-C", "backlight": "rgb", "detachable cable": "yes", "hot-swap": "yes", "cyrillic": "no", "plastic keycaps": "pbt" } }, { "id": 6, "name": "K58-B Special", "type": "keyboard", "price": 110, "stock": "out", "image": "src/images/keyboard.png", "specs": { "brend": "akko", "model": "k58-b special", "keycap profile": "cherry mx", "form-factor": "70%", "type": "mechanical", "switch": "glow-k", "interface": "USB Type-C", "backlight": "yes", "detachable cable": "yes", "hot-swap": "yes", "cyrillic": "yes", "plastic keycaps": "abs" } }, { "id": 7, "name": "K58-B Elite", "type": "keyboard", "price": 120, "stock": "out", "image": "src/images/keyboard.png", "specs": { "brend": "akko", "model": "k58-b elite", "keycap profile": "cherry mx", "form-factor": "70%", "type": "mechanical", "switch": "glow-k", "interface": "USB Type-C", "backlight": "yes", "detachable cable": "yes", "hot-swap": "yes", "cyrillic": "no", "plastic keycaps": "abs" } }, { "id": 8, "name": "Nothing C1", "type": "headphones", "price": 95, "stock": "in", "image": "src/images/headphones.png", "specs": { "brend": "nothing", "model": "nothing c1", "type": "wireless", "connection": "bluetooth", "noise reduction": "active", "battery": "up to 30 hours", "charging": "USB-C", "waterproof": "no", "microphone": "yes" } }, { "id": 9, "name": "Nothing C1 Plus", "type": "headphones", "price": 95, "stock": "in", "image": "src/images/headphones.png", "specs": { "brend": "nothing", "model": "nothing c1 plus", "type": "wireless", "connection": "bluetooth", "noise reduction": "active", "battery": "up to 40 hours", "charging": "USB-C", "waterproof": "ipx4", "microphone": "yes" } }, { "id": 10, "name": "Nothing C1 Pro", "type": "headphones", "price": 95, "stock": "in", "image": "src/images/headphones.png", "specs": { "brend": "nothing", "model": "nothing c1 pro", "type": "wireless", "connection": "bluetooth", "noise reduction": "active", "battery": "up to 35 hours", "charging": "USB-C", "waterproof": "no", "microphone": "yes" } }, { "id": 11, "name": "Nothing C1 Max", "type": "headphones", "price": 95, "stock": "in", "image": "src/images/headphones.png", "specs": { "brend": "nothing", "model": "nothing c1 max", "type": "wireless", "connection": "bluetooth + 3.5mm", "noise reduction": "active", "battery": "up to 50 hours", "charging": "USB-C", "waterproof": "no", "microphone": "yes" } }, { "id": 12, "name": "Nothing C1 Lite", "type": "headphones", "price": 95, "stock": "in", "image": "src/images/headphones.png", "specs": { "brend": "nothing", "model": "nothing c1 lite", "type": "wireless", "connection": "bluetooth", "noise reduction": "passive", "battery": "up to 25 hours", "charging": "USB-C", "waterproof": "no", "microphone": "yes" } }, { "id": 13, "name": "M69L Classic", "type": "memb keyboard", "price": 100, "stock": "in", "image": "src/images/memb-keyboard.png", "specs": { "brend": "akko", "model": "m69l classic", "keycap profile": "oem", "form-factor": "70%", "type": "membrane", "switch": "silent-silver", "interface": "USB", "backlight": "no", "detachable cable": "no", "multimedia keys": "yes", "cyrillic": "no" } }, { "id": 14, "name": "M69L Pro", "type": "memb keyboard", "price": 100, "stock": "in", "image": "src/images/memb-keyboard.png", "specs": { "brend": "akko", "model": "m69l pro", "keycap profile": "oem", "form-factor": "70%", "type": "membrane", "switch": "silent-silver", "interface": "USB Type-C", "backlight": "yes", "detachable cable": "yes", "multimedia keys": "yes", "cyrillic": "no" } }, { "id": 15, "name": "M69L Plus", "type": "memb keyboard", "price": 100, "stock": "in", "image": "src/images/memb-keyboard.png", "specs": { "brend": "akko", "model": "m69l plus", "keycap profile": "oem", "form-factor": "70%", "type": "membrane", "switch": "silent-silver", "interface": "USB", "backlight": "no", "detachable cable": "no", "multimedia keys": "yes", "cyrillic": "yes" } }, { "id": 16, "name": "M69L Max", "type": "memb keyboard", "price": 100, "stock": "in", "image": "src/images/memb-keyboard.png", "specs": { "brend": "akko", "model": "m69l max", "keycap profile": "oem", "form-factor": "70%", "type": "membrane", "switch": "silent-silver", "interface": "USB Type-C", "backlight": "rgb", "detachable cable": "yes", "multimedia keys": "yes", "cyrillic": "yes" } }, { "id": 17, "name": "M69L Ultra", "type": "memb keyboard", "price": 100, "stock": "in", "image": "src/images/memb-keyboard.png", "specs": { "brend": "akko", "model": "m69l ultra", "keycap profile": "oem", "form-factor": "70%", "type": "membrane", "switch": "silent-silver", "interface": "USB Type-C", "backlight": "yes", "detachable cable": "yes", "multimedia keys": "yes", "cyrillic": "no" } }, { "id": 18, "name": "F1 Pro Max White", "type": "mouse", "price": 70, "stock": "in", "image": "src/images/mouse.png", "specs": { "brend": "akko", "model": "f1 pro max", "sensor": "pixart 3995", "weight": "55g", "dpi": "26000", "connection": "wireless", "battery": "up to 70 hours", "buttons": 5, "rgb": "yes" } }, { "id": 19, "name": "F1 Pro Max Black", "type": "mouse", "price": 70, "stock": "in", "image": "src/images/mouse.png", "specs": { "brend": "akko", "model": "f1 pro max", "sensor": "pixart 3995", "weight": "55g", "dpi": "26000", "connection": "wireless", "battery": "up to 70 hours", "buttons": 5, "rgb": "no" } }, { "id": 20, "name": "F1 Pro Max Pink", "type": "mouse", "price": 70, "stock": "in", "image": "src/images/mouse.png", "specs": { "brend": "akko", "model": "f1 pro max", "sensor": "pixart 3995", "weight": "58g", "dpi": "26000", "connection": "wireless + wired", "battery": "up to 70 hours", "buttons": 5, "rgb": "yes" } }, { "id": 21, "name": "F1 Pro Max Blue", "type": "mouse", "price": 70, "stock": "in", "image": "src/images/mouse.png", "specs": { "brend": "akko", "model": "f1 pro max", "sensor": "pixart 3995", "weight": "55g", "dpi": "26000", "connection": "wireless", "battery": "up to 80 hours", "buttons": 6, "rgb": "yes" } }, { "id": 22, "name": "F1 Pro Max Green", "type": "mouse", "price": 70, "stock": "in", "image": "src/images/mouse.png", "specs": { "brend": "akko", "model": "f1 pro max", "sensor": "pixart 3995", "weight": "56g", "dpi": "26000", "connection": "wireless", "battery": "up to 70 hours", "buttons": 5, "rgb": "yes" } } ]
+[
+    {
+        "id": 1,
+        "name": "K58-B Pro",
+        "type": "keyboard",
+        "price": 110,
+        "stock": "in",
+        "description": "command beyond words. precision forged in every detail. feel the response. own the moment.",
+        "images": [
+            "src/images/keyboard/k58.png",
+            "src/images/keyboard/k58.png",
+            "src/images/keyboard/k58-pro-3.png"
+        ],
+        "specs": {
+            "brand": "akko",
+            "model": "k58-b pro",
+            "keycap profile": "cherry mx",
+            "form-factor": "70%",
+            "type": "mechanical",
+            "switch": "glow-k",
+            "interface": "USB Type-C",
+            "backlight": "rgb",
+            "detachable cable": "yes",
+            "hot-swap": "yes",
+            "cyrillic": "no",
+            "plastic keycaps": "abs"
+        }
+    },
+    {
+        "id": 2,
+        "name": "K58-B Lite",
+        "type": "keyboard",
+        "price": 70,
+        "stock": "in",
+        "description": "essential performance. everyday reliability. your typing companion.",
+        "images": [
+            "src/images/keyboard/k58.png",
+            "src/images/keyboard/k58-lite-2.png"
+        ],
+        "specs": {
+            "brand": "akko",
+            "model": "k58-b lite",
+            "keycap profile": "cherry mx",
+            "form-factor": "70%",
+            "type": "mechanical",
+            "switch": "glow-k",
+            "interface": "USB Type-C",
+            "backlight": "yes",
+            "detachable cable": "yes",
+            "hot-swap": "no",
+            "cyrillic": "no",
+            "plastic keycaps": "abs"
+        }
+    },
+    {
+        "id": 3,
+        "name": "K58-B Mini",
+        "type": "keyboard",
+        "price": 45,
+        "stock": "in",
+        "description": "small footprint. big personality. take it anywhere.",
+        "images": [
+            "src/images/keyboard/k58-mini-1.png",
+            "src/images/keyboard/k58-mini-2.png",
+            "src/images/keyboard/k58-mini-3.png"
+        ],
+        "specs": {
+            "brand": "akko",
+            "model": "k58-b mini",
+            "keycap profile": "cherry mx",
+            "form-factor": "70%",
+            "type": "mechanical",
+            "switch": "glow-k",
+            "interface": "USB Type-C",
+            "backlight": "no",
+            "detachable cable": "yes",
+            "hot-swap": "no",
+            "cyrillic": "no",
+            "plastic keycaps": "pbt"
+        }
+    },
+    {
+        "id": 4,
+        "name": "K58-B Max",
+        "type": "keyboard",
+        "price": 65,
+        "stock": "out",
+        "description": "wireless freedom. seamless switching. work without limits.",
+        "images": [
+            "src/images/keyboard/k58.png",
+            "src/images/keyboard/k58-max-2.png"
+        ],
+        "specs": {
+            "brand": "akko",
+            "model": "k58-b max",
+            "keycap profile": "cherry mx",
+            "form-factor": "70%",
+            "type": "mechanical",
+            "switch": "glow-k",
+            "interface": "USB Type-C + Bluetooth",
+            "backlight": "yes",
+            "detachable cable": "yes",
+            "hot-swap": "yes",
+            "cyrillic": "no",
+            "plastic keycaps": "abs"
+        }
+    },
+    {
+        "id": 5,
+        "name": "K58-B Ultra",
+        "type": "keyboard",
+        "price": 100,
+        "stock": "in",
+        "description": "peak performance. ultimate customization. for the true enthusiast.",
+        "images": [
+            "src/images/keyboard/k58.png",
+            "src/images/keyboard/k58-ultra-2.png"
+        ],
+        "specs": {
+            "brand": "akko",
+            "model": "k58-b ultra",
+            "keycap profile": "cherry mx",
+            "form-factor": "70%",
+            "type": "mechanical",
+            "switch": "glow-k",
+            "interface": "USB Type-C",
+            "backlight": "rgb",
+            "detachable cable": "yes",
+            "hot-swap": "yes",
+            "cyrillic": "no",
+            "plastic keycaps": "pbt"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Nothing C1",
+        "type": "headphones",
+        "price": 95,
+        "stock": "in",
+        "description": "pure sound. transparent design. hear what you've been missing.",
+        "images": [
+            "src/images/headphones/nothing-c1-pro.png",
+            "src/images/headphones/nothing-c1-pro.png"
+        ],
+        "specs": {
+            "brand": "nothing",
+            "model": "nothing c1",
+            "type": "wireless",
+            "connection": "bluetooth",
+            "noise reduction": "active",
+            "battery": "up to 30 hours",
+            "charging": "USB-C",
+            "waterproof": "no",
+            "microphone": "yes"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Nothing C1 Plus",
+        "type": "headphones",
+        "price": 110,
+        "stock": "in",
+        "description": "enhanced endurance. premium comfort. your daily driver.",
+        "images": [
+            "src/images/headphones/nothing-c1-plus-1.png",
+            "src/images/headphones/nothing-c1-plus-2.png"
+        ],
+        "specs": {
+            "brand": "nothing",
+            "model": "nothing c1 plus",
+            "type": "wireless",
+            "connection": "bluetooth",
+            "noise reduction": "active",
+            "battery": "up to 40 hours",
+            "charging": "USB-C",
+            "waterproof": "ipx4",
+            "microphone": "yes"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Nothing C1 Pro",
+        "type": "headphones",
+        "price": 130,
+        "stock": "in",
+        "description": "studio-grade sound. elite noise cancellation. lose yourself in music.",
+        "images": [
+            "src/images/headphones/nothing-c1-pro.png",
+            "src/images/headphones/nothing-c1-pro-2.png"
+        ],
+        "specs": {
+            "brand": "nothing",
+            "model": "nothing c1 pro",
+            "type": "wireless",
+            "connection": "bluetooth",
+            "noise reduction": "active",
+            "battery": "up to 35 hours",
+            "charging": "USB-C",
+            "waterproof": "no",
+            "microphone": "yes"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Nothing C1 Max",
+        "type": "headphones",
+        "price": 120,
+        "stock": "out",
+        "description": "maximum versatility. wired or wireless. your call.",
+        "images": [
+            "src/images/headphones/nothing-c1-max-1.png"
+        ],
+        "specs": {
+            "brand": "nothing",
+            "model": "nothing c1 max",
+            "type": "wireless",
+            "connection": "bluetooth + 3.5mm",
+            "noise reduction": "active",
+            "battery": "up to 50 hours",
+            "charging": "USB-C",
+            "waterproof": "no",
+            "microphone": "yes"
+        }
+    },
+    {
+        "id": 10,
+        "name": "F1 Pro Max White",
+        "type": "mouse",
+        "price": 70,
+        "stock": "in",
+        "description": "featherlight. lightning fast. win more games.",
+        "images": [
+            "src/images/mouse/f1-pro-max-white.png",
+            "src/images/mouse/f1-pro-max-white-2.png"
+        ],
+        "specs": {
+            "brand": "akko",
+            "model": "f1 pro max",
+            "sensor": "pixart 3995",
+            "weight": "55g",
+            "dpi": "26000",
+            "connection": "wireless",
+            "battery": "up to 70 hours",
+            "buttons": 5,
+            "rgb": "yes"
+        }
+    },
+    {
+        "id": 11,
+        "name": "F1 Pro Max Black",
+        "type": "mouse",
+        "price": 70,
+        "stock": "in",
+        "description": "stealth mode. pure performance. no distractions.",
+        "images": [
+            "src/images/mouse/f1-pro-max-black-1.png",
+            "src/images/mouse/f1-pro-max-black-2.png"
+        ],
+        "specs": {
+            "brand": "akko",
+            "model": "f1 pro max",
+            "sensor": "pixart 3995",
+            "weight": "55g",
+            "dpi": "26000",
+            "connection": "wireless",
+            "battery": "up to 70 hours",
+            "buttons": 5,
+            "rgb": "no"
+        }
+    },
+    {
+        "id": 12,
+        "name": "M69L Classic",
+        "type": "memb keyboard",
+        "price": 45,
+        "stock": "in",
+        "description": "quiet keystrokes. classic feel. perfect for work.",
+        "images": [
+            "src/images/memb-keyboard/memb-keyboard.png",
+            "src/images/memb-keyboard/m69l-classic-2.png"
+        ],
+        "specs": {
+            "brand": "akko",
+            "model": "m69l classic",
+            "keycap profile": "oem",
+            "form-factor": "70%",
+            "type": "membrane",
+            "switch": "silent-silver",
+            "interface": "USB",
+            "backlight": "no",
+            "detachable cable": "no",
+            "multimedia keys": "yes",
+            "cyrillic": "no"
+        }
+    },
+    {
+        "id": 13,
+        "name": "M69L Pro",
+        "type": "memb keyboard",
+        "price": 55,
+        "stock": "in",
+        "description": "whisper-quiet. backlit brilliance. work late in style.",
+        "images": [
+            "src/images/memb-keyboard/memb-keyboard.png",
+            "src/images/memb-keyboard/memb-keyboard.png"
+        ],
+        "specs": {
+            "brand": "akko",
+            "model": "m69l pro",
+            "keycap profile": "oem",
+            "form-factor": "70%",
+            "type": "membrane",
+            "switch": "silent-silver",
+            "interface": "USB Type-C",
+            "backlight": "yes",
+            "detachable cable": "yes",
+            "multimedia keys": "yes",
+            "cyrillic": "no"
+        }
+    },
+    {
+        "id": 14,
+        "name": "M69L Max",
+        "type": "memb keyboard",
+        "price": 65,
+        "stock": "out",
+        "description": "rgb symphony. full customization. membrane reimagined.",
+        "images": [
+            "src/images/memb-keyboard/m69l-max-1.png"
+        ],
+        "specs": {
+            "brand": "akko",
+            "model": "m69l max",
+            "keycap profile": "oem",
+            "form-factor": "70%",
+            "type": "membrane",
+            "switch": "silent-silver",
+            "interface": "USB Type-C",
+            "backlight": "rgb",
+            "detachable cable": "yes",
+            "multimedia keys": "yes",
+            "cyrillic": "yes"
+        }
+    },
+    {
+        "id": 15,
+        "name": "StealthPad XXL",
+        "type": "mouse pad",
+        "price": 35,
+        "stock": "in",
+        "description": "large surface. smooth glide. control and speed combined.",
+        "images": [
+            "src/images/mouse-pads/mouse-pad.png",
+            "src/images/mouse-pads/stealthpad-xxl-2.png"
+        ],
+        "specs": {
+            "brand": "arctech",
+            "model": "stealthpad xxl",
+            "size": "900x400mm",
+            "thickness": "4mm",
+            "surface": "hybrid",
+            "base": "rubber",
+            "stitched edges": "yes"
+        }
+    },
+    {
+        "id": 16,
+        "name": "SpeedPad Pro",
+        "type": "mouse pad",
+        "price": 28,
+        "stock": "in",
+        "description": "fast glide. perfect for low sensitivity players.",
+        "images": [
+            "src/images/mouse-pads/speedpad-pro-1.png"
+        ],
+        "specs": {
+            "brand": "arctech",
+            "model": "speedpad pro",
+            "size": "800x300mm",
+            "thickness": "3mm",
+            "surface": "speed",
+            "base": "rubber",
+            "stitched edges": "yes"
+        }
+    }
+]
