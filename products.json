@@ -60,7 +60,7 @@
         "stock": "in",
         "description": "small footprint. big personality. take it anywhere.",
         "images": [
-            "src/images/keyboard/k58-mini-1.png",
+            "src/images/keyboard/k58.png",
             "src/images/keyboard/k58-mini-2.png",
             "src/images/keyboard/k58-mini-3.png"
         ],
@@ -162,8 +162,8 @@
         "stock": "in",
         "description": "enhanced endurance. premium comfort. your daily driver.",
         "images": [
-            "src/images/headphones/nothing-c1-plus-1.png",
-            "src/images/headphones/nothing-c1-plus-2.png"
+            "src/images/headphones/nothing-c1-pro.png",
+            "src/images/headphones/nothing-c1-pro.png"
         ],
         "specs": {
             "brand": "nothing",
@@ -208,7 +208,7 @@
         "stock": "out",
         "description": "maximum versatility. wired or wireless. your call.",
         "images": [
-            "src/images/headphones/nothing-c1-max-1.png"
+            "src/images/headphones/nothing-c1-pro.png"
         ],
         "specs": {
             "brand": "nothing",
@@ -253,7 +253,7 @@
         "stock": "in",
         "description": "stealth mode. pure performance. no distractions.",
         "images": [
-            "src/images/mouse/f1-pro-max-black-1.png",
+            "src/images/mouse/vgn-f1-pro.png",
             "src/images/mouse/f1-pro-max-black-2.png"
         ],
         "specs": {
@@ -326,7 +326,7 @@
         "stock": "out",
         "description": "rgb symphony. full customization. membrane reimagined.",
         "images": [
-            "src/images/memb-keyboard/m69l-max-1.png"
+            "src/images/memb-keyboard/memb-keyboard.png"
         ],
         "specs": {
             "brand": "akko",
