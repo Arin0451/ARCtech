@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     setupFilters();
     setupSorting();
     setupModal();
+    applyUrlFilter()
 });
 
 async function loadProducts() {
@@ -92,28 +93,70 @@ function setupFilters() {
 
 // ==================== СОРТИРОВКА ====================
 function setupSorting() {
+
     const sortBtn = document.querySelector(".sort");
+    const grid = document.querySelector(".catalog-grid");
+
+    if (!sortBtn || !grid) return;
+
     let asc = true;
 
     sortBtn.addEventListener("click", () => {
-        const cards = Array.from(document.querySelectorAll(".product-card"));
+
+        const cards = Array.from(
+            document.querySelectorAll(".product-card")
+        );
 
         cards.sort((a, b) => {
-            const stockA = a.dataset.stock === "in" ? 1 : 0;
-            const stockB = b.dataset.stock === "in" ? 1 : 0;
-            if (stockA !== stockB) return stockB - stockA;
 
-            const priceA = +a.dataset.price;
-            const priceB = +b.dataset.price;
-            return asc ? priceA - priceB : priceB - priceA;
+            const stockA = a.dataset.stock === "in";
+            const stockB = b.dataset.stock === "in";
+
+            if (stockA !== stockB) {
+                return stockA ? -1 : 1;
+            }
+
+            const priceA = Number(a.dataset.price);
+            const priceB = Number(b.dataset.price);
+
+            return asc
+                ? priceA - priceB
+                : priceB - priceA;
         });
 
         asc = !asc;
-        sortBtn.classList.toggle("active");
 
-        const grid = document.querySelector(".catalog-grid");
-        cards.forEach(card => grid.appendChild(card));
+        // Переключаем класс для поворота иконки
+        if (asc) {
+            sortBtn.classList.remove("active");
+        } else {
+            sortBtn.classList.add("active");
+        }
+
+        cards.forEach(card => {
+            grid.appendChild(card);
+        });
+
     });
+
+}
+
+function applyUrlFilter() {
+
+    const params = new URLSearchParams(window.location.search);
+
+    const type = params.get("type");
+
+    if (!type) return;
+
+    const filter = document.querySelector(
+        `.filter-item[data-type="${type}"]`
+    );
+
+    if (filter) {
+        filter.click();
+    }
+
 }
 
 // ==================== МОДАЛЬНОЕ ОКНО ====================
