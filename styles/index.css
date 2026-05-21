@@ -270,6 +270,10 @@
   object-fit: contain;
 }
 
+.news-card-img .content {
+  padding: 10px 0 10px 0;
+}
+
 .news-card-img .overlay {
   position: absolute;
   top: 0;
